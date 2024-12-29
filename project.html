@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+<head>
+	<title>survey form</title>
+	<link rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body>
+	<h1 id="title" >ethiopia survey form</h1>
+	<p id="description">Thank you for participeting on this platform</p>
+	<div>
+		<form id="survey-form">
+			<fieldset>
+				<label>Your Name <input id="name" type="text" name="full-name" required placeholder="Your name"></label>
+				<label>Your email <input id="email" type="email" name="email" required placeholder="Your email"></label>
+				<label>Your age <input id="number" type="number" name="age" min="15" max="100" placeholder="Your age"> </label>
+				<label>which food do you like form ethiopan food?</label>
+				<select >
+					<option value="">(select one)</option>
+					<option value="1">doro</option>
+					<option value="2">enjera</option>
+					<option value="3">coffee</option>
+					<option value="4">ktifo</option>
+
+				</select>
+
+			</fieldset>
+			<fieldset>
+				<legend>where do you live?</legend>
+				<label for="living-place1"><input type="radio" name="place" checked>addis ababa</label>
+				<label for="living-place2"><input type="radio" name="place">bahrdar</label>
+				<label for="living-place3"><input type="radio" name="place">mekele</label>
+			</fieldset>
+			<fieldset>
+				<legend>which job do you work?</legend>
+				<label><input type="checkbox" name="box" value="checkbox">web development</label>
+				<label><input type="checkbox" name="box" value="checkbox">software developer</label>
+				<label><input type="checkbox" name="box" value="checkbox">doctor</label>
+				<label><input type="checkbox" name="box">other</label>
+			</fieldset>
+			<fieldset>
+				<label for="bio">Provide things that is in your maend:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="my idea about ethiopia..."></textarea>
+        </label>
+			</fieldset>
+			 <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+		</form>
+	</div>
+</body>
+</html>
